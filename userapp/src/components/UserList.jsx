@@ -42,6 +42,17 @@ const UserList = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    // Check if any input field is left blank
+    if (Object.values(formData).some(value => value === '')) {
+      alert('Please fill in all fields.');
+      return;
+    }
+    // Validate email format
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(formData.email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
     try {
       await axios.put(`http://localhost:5227/api/user/${editingUser}`, formData);
       setEditingUser(null);
