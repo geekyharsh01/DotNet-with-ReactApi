@@ -6,8 +6,8 @@ This repository contains a full-stack web application for managing users. The ba
 
 Before running the application, ensure you have the following prerequisites installed:
 
-- [.NET 8 SDK]
-- [Node.js and npm]
+- .NET 8 SDK
+- Node.js[v20.13.1] and npm[10.8.0]
 
 ## Installation
 
@@ -27,4 +27,7 @@ dotnet run
 cd userapp
 npm start
 ```
+### Important
+In the frontend react App check for the port on which request is happening. For me the port is - http://localhost:5227/ on which backend server is hosted(DotNet WebApi).
+If your DotNet WebApi are hosted on different port, either you can change the port in launchSettings.json or you can change the port in the React application to the one on which your DotNet Web Api is hosted.
 
