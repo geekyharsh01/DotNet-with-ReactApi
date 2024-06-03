@@ -6,8 +6,8 @@ This repository contains a full-stack web application for managing users. The ba
 
 Before running the application, ensure you have the following prerequisites installed:
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
-- [Node.js and npm](https://nodejs.org/)
+- [.NET 8 SDK]
+- [Node.js and npm]
 
 ## Installation
 
