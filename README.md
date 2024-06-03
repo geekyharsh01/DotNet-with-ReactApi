@@ -1,6 +1,7 @@
 # User Management Application
 
 This repository contains a full-stack web application for managing users. The backend is implemented using .NET Web API, and the frontend is implemented using React.
+This Application do CRUD operations, We can add the user details using the form and then see all the list of added users in the Userlist and there we can Update the user information or delete that user information.
 
 ## Prerequisites
 
